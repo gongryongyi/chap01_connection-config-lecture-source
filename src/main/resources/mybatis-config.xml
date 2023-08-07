@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE configuration
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
-        "https://mybatis.org/dtd/mybatis-3-config.dtd">
+        "https://mybatis.org/dtd/mybatis-3-config.dtd"><!-- XML 문서의 유효성체크를 위해 필요 (정의한 기능만 쓰여야함)-->
+
+
 <configuration>
     <environments default="dev">
         <environment id="dev">
@@ -12,11 +14,12 @@
                 <property name="driver" value="oracle.jdbc.driver.OracleDriver"/>
                 <property name="url" value="jdbc:oracle:thin:@localhost:1521:xe"/>
                 <property name="username" value="C##OHGIRAFFERS"/>
-                <property name="password" value="OHGIRAFFERS"/>
+                <property name="password" value="OHGIRAFFERS"/><!--알맞게 전달 작성-->
             </dataSource>
         </environment>
-    </environments>
+    </environments><!--여기까지가 환경에 대한 설정-->
+
     <mappers>
-        <mapper resource="mapper.xml"/>
+        <mapper resource="mapper.xml"/><!--내가 작성하는 파일이름으로 써야함-->
     </mappers>
-</configuration>
+</configuration>  <!-- XML 설정파일에서 지정하는 마이바티스-->

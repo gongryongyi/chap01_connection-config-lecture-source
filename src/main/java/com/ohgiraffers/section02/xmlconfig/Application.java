@@ -8,7 +8,7 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Date;
-
+//XML에서 SqlSessionFactory 빌드하기
 public class Application {
     public static void main(String[] args) {
         String resource = "mybatis-config.xml";

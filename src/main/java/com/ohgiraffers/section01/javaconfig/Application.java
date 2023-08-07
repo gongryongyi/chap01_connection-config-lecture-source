@@ -9,7 +9,7 @@ import org.apache.ibatis.transaction.jdbc.JdbcTransactionFactory;
 import org.apache.ibatis.session.Configuration;
 
 import java.util.Date;
-
+//XML 을 사용하지 않고 SqlSessionFactory 빌드하기
 
 public class Application {
 

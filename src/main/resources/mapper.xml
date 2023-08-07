@@ -8,5 +8,5 @@
                SYSDATE
           FROM DUAL
 
-    </select>
+    </select>  <!-- 매핑된거 -->
 </mapper>
